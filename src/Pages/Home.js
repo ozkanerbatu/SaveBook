@@ -16,6 +16,7 @@ const Home = () => {
     <BookCard book={data.item} />
   );
   const closeRow = (rowMap, rowKey) => {
+      console.log(rowKey);
     if (rowMap[rowKey]) {
       rowMap[rowKey].closeRow();
     }
@@ -55,9 +56,9 @@ const Home = () => {
             renderItem={renderItem}
             renderHiddenItem={renderHiddenItem}
             rightOpenValue={-100}
-            previewRowKey={"0"}
-            previewOpenValue={-40}
-            previewOpenDelay={3000}
+            previewRowKey={"1"}
+            previewOpenValue={-100}
+            previewOpenDelay={1000}
             onRowDidOpen={onRowDidOpen}
             ItemSeparatorComponent={() => <View style={styles.separator} />}
             contentContainerStyle={styles.list}
@@ -149,7 +150,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
   },
   separator: {
-    height: 7,
+    height: 12,
   },
   list: {
     paddingBottom: 100,

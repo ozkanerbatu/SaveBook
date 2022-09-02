@@ -13,6 +13,16 @@ export const BooksSlice = createSlice({
                 categoryId: 3,
                 desc: "The Alchemist is a novel by Paulo Coelho that was first published in 1988.",
             },
+            {
+                id: 2,
+                name: "The Lord of the Rings",
+                startedDate: "2021-08-01",
+                finishedDate: "2021-08-05",
+                category: "Fantastik",
+                categoryId: 2,
+                desc: "The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien.",
+
+            }
         ],
     },
     reducers: {

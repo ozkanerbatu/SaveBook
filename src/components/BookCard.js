@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignSelf: "center",
     height: 60,
-    width: "98%",
+    width: "90%",
     borderRadius: 20,
     shadowColor: "black",
     shadowOffset: { width: 0, height: 2 },
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     paddingLeft:30
   },
   detail: {
-    width: "98%",
+    width: "90%",
     justifyContent: "center",
     backgroundColor: "#31307a",
     alignSelf: "center",
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#6b69fa",
     justifyContent: "center",
     alignSelf: "center",
-    width: "98%",
+    width: "90%",
     shadowColor: "black",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
