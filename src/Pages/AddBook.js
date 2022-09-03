@@ -28,8 +28,8 @@ const AddBook = (props) => {
   useEffect(() => {
     setBook({
       ...book,
-      startedDate: checkBox.start ? new Date().toISOString().slice(0, 16) : "",
-      finishedDate: checkBox.finish ? new Date().toISOString().slice(0, 16) : "",
+      startedDate: checkBox.start ? new Date().toISOString().slice(0, 10) : "",
+      finishedDate: checkBox.finish ? new Date().toISOString().slice(0, 10) : "",
     })
   }, [checkBox])
   useEffect(() => {
@@ -70,14 +70,14 @@ const AddBook = (props) => {
       <View style={styles.form}>
         <TextInput value={book.name} onChangeText={(text) => { mergeBook({ name: text }) }} style={styles.input} placeholder="Book Name" />
         <View style={styles.dateView}>
-          <TextInput onChangeText={(text) => { mergeBook({ startedDate: text }) }} value={book.startedDate.toString()} style={styles.input} placeholder="Started Date  (2022-09-02T21:52)" />
+          <TextInput onChangeText={(text) => { mergeBook({ startedDate: text }) }} value={book.startedDate.toString()} style={styles.input} placeholder="Started Date  (2022-09-02)" />
           <TouchableOpacity onPress={() => { handleCheckBox(1) }} style={styles.checkBox} >
             <Text>Now</Text>
             {!checkBox.start ? <MaterialCommunityIcons name="checkbox-blank-outline" size={24} color="black" /> : <MaterialCommunityIcons name="checkbox-outline" size={24} color="black" />}
           </TouchableOpacity>
         </View>
         <View style={styles.dateView}>
-          <TextInput onChangeText={(text) => { mergeBook({ finishedDate: text }) }} value={book.finishedDate.toString()} style={styles.input} placeholder="Finished Date  (2022-09-02T21:52)" />
+          <TextInput onChangeText={(text) => { mergeBook({ finishedDate: text }) }} value={book.finishedDate.toString()} style={styles.input} placeholder="Finished Date  (2022-09-02)" />
           <TouchableOpacity onPress={() => { handleCheckBox(2) }} style={styles.checkBox} >
             <Text>Now</Text>
             {!checkBox.finish ? <MaterialCommunityIcons name="checkbox-blank-outline" size={24} color="black" /> : <MaterialCommunityIcons name="checkbox-outline" size={24} color="black" />}
