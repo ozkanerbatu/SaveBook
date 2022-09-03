@@ -73,7 +73,7 @@ const AddBook = (props) => {
           <TextInput onChangeText={(text) => { mergeBook({ startedDate: text }) }} value={book.startedDate.toString()} style={styles.input} placeholder="Started Date  (2022-09-02)" />
           <TouchableOpacity onPress={() => { handleCheckBox(1) }} style={styles.checkBox} >
             <Text>Now</Text>
-            {!checkBox.start ? <MaterialCommunityIcons name="checkbox-blank-outline" size={24} color="black" /> : <MaterialCommunityIcons name="checkbox-outline" size={24} color="black" />}
+            {!checkBox.start ? <MaterialCommunityIcons name="checkbox-blank-outline" size={24} color="black" /> : <MaterialCommunityIcons name="checkbox-outline"  size={24} color="black" />}
           </TouchableOpacity>
         </View>
         <View style={styles.dateView}>
