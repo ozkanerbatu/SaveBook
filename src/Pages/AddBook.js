@@ -28,8 +28,8 @@ const AddBook = (props) => {
   useEffect(() => {
     setBook({
       ...book,
-      startedDate: checkBox.start ? new Date().toISOString().slice(0, 16) : "",
-      finishedDate: checkBox.finish ? new Date().toISOString().slice(0, 16) : "",
+      startedDate: checkBox.start ? new Date().toISOString().slice(0, 10) : "",
+      finishedDate: checkBox.finish ? new Date().toISOString().slice(0, 10) : "",
     })
   }, [checkBox])
   useEffect(() => {
